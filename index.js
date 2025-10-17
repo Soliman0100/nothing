@@ -14,15 +14,17 @@ btns.forEach((el)=>{
     }
 })
 submint.onclick = ()=>{
-    if(!valueB) return;
-    if(valueB <= 3 && valueB > 2) nigga.innerHTML = "FR NIGGA ???"
+   if(!valueB) return;
+    if(valueB <= 3 && valueB > 2){
+        nigga.innerHTML = "FR NIGGA ???"
+        nigga.style.cssText = `
+font-size: 2.5rem;
+font-whet: bold;
+color: white;
+`;
+    }
     if(valueB < 3) nigga.innerHTML = `<img style="width: 300px; border-radius: 10px;" src="Neo-nazi.jpg" alt="">`
     if(valueB >= 4) h3.textContent = `You selected ${valueB} out of 5 `
     secNone.classList.add("hidden");
     secBlock.classList.remove("hidden");
 }
-nigga.style.cssText = `
-font-size: 2.5rem;
-font-whet: bold;
-color: white;
-`;
